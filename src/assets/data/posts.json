@@ -11,7 +11,8 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "user": {
           "id": 2,
-          "username": "arvicorpus"
+          "username": "arvicorpus",
+          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg"
         }
       },
       {
@@ -19,7 +20,8 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "user": {
           "id": 3,
-          "username": "marcuscorpus"
+          "username": "marcuscorpus",
+          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg"
         }
       }
     ],
@@ -42,7 +44,8 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "user": {
           "id": 3,
-          "username": "marcuscorpus"
+          "username": "marcuscorpus",
+          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg"
         }
       },
       {
@@ -50,7 +53,8 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "user": {
           "id": 4,
-          "username": "mariuscorpus"
+          "username": "mariuscorpus",
+          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg"
         }
       }
     ],
@@ -73,7 +77,8 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         "user": {
           "id": 4,
-          "username": "mariuscorpus"
+          "username": "mariuscorpus",
+          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg"
         }
       },
       {
@@ -81,7 +86,8 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": 1,
-          "username": "marccorpus"
+          "username": "marccorpus",
+          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg"
         }
       }
     ],
@@ -104,7 +110,8 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": 1,
-          "username": "marccorpus"
+          "username": "marccorpus",
+          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg"
         }
       },
       {
@@ -112,7 +119,8 @@
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
         "user": {
           "id": 2,
-          "username": "arvicorpus"
+          "username": "arvicorpus",
+          "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg"
         }
       }
     ],
