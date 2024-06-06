@@ -1,0 +1,126 @@
+[
+  {
+    "id": 1,
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
+    "nofComments": 4,
+    "nofLikes": 15,
+    "comments": [
+      {
+        "id": 1,
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "user": {
+          "id": 2,
+          "username": "arvicorpus"
+        }
+      },
+      {
+        "id": 2,
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "user": {
+          "id": 3,
+          "username": "marcuscorpus"
+        }
+      }
+    ],
+    "user": {
+      "id": 1,
+      "username": "marccorpus",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg"
+    },
+    "createdAt": "06 June 2024"
+  },
+  {
+    "id": 2,
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/2.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
+    "nofComments": 11,
+    "nofLikes": 24,
+    "comments": [
+      {
+        "id": 3,
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "user": {
+          "id": 3,
+          "username": "marcuscorpus"
+        }
+      },
+      {
+        "id": 4,
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "user": {
+          "id": 4,
+          "username": "mariuscorpus"
+        }
+      }
+    ],
+    "user": {
+      "id": 2,
+      "username": "arvicorpus",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg"
+    },
+    "createdAt": "05 June 2024"
+  },
+  {
+    "id": 3,
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/3.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
+    "nofComments": 14,
+    "nofLikes": 34,
+    "comments": [
+      {
+        "id": 5,
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "user": {
+          "id": 4,
+          "username": "mariuscorpus"
+        }
+      },
+      {
+        "id": 6,
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": 1,
+          "username": "marccorpus"
+        }
+      }
+    ],
+    "user": {
+      "id": 3,
+      "username": "marcuscorpus",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg"
+    },
+    "createdAt": "04 June 2024"
+  },
+  {
+    "id": 4,
+    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellendus unde blanditiis. Eos fugiat dolorem ea fugit aut sapiente corrupti autem dolores deleniti architecto, omnis, amet unde dignissimos quam minima?",
+    "nofComments": 21,
+    "nofLikes": 32,
+    "comments": [
+      {
+        "id": 7,
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": 1,
+          "username": "marccorpus"
+        }
+      },
+      {
+        "id": 8,
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. H",
+        "user": {
+          "id": 2,
+          "username": "arvicorpus"
+        }
+      }
+    ],
+    "user": {
+      "id": 4,
+      "username": "mariuscorpus",
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg"
+    },
+    "createdAt": "03 June 2024"
+  }
+]
