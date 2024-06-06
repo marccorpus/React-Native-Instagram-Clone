@@ -45,6 +45,9 @@ const styles = StyleSheet.create({
   bookmarkIcon: {
     marginLeft: 'auto',
   },
+  isLiked: {
+    color: colors.red,
+  },
   likes: {
     color: colors.black,
   },
@@ -53,7 +56,7 @@ const styles = StyleSheet.create({
     lineHeight: 20,
   },
   viewAllComments: {
-    color: colors.gray,
+    marginTop: 10,
   },
   createdAt: {
     color: colors.gray,

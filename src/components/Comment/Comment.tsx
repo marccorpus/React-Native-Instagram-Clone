@@ -1,4 +1,5 @@
-import {View, Text} from 'react-native';
+import {useState} from 'react';
+import {View, Text, Pressable} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import UserName from '../UserName';
@@ -12,6 +13,12 @@ interface CommentProps {
 }
 
 const Comment = ({comment}: CommentProps) => {
+  const [isLiked, setIsLiked] = useState(false);
+
+  const toggleIsLiked = () => {
+    setIsLiked(v => !v);
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.description}>
@@ -19,7 +26,12 @@ const Comment = ({comment}: CommentProps) => {
         {comment.comment}
       </Text>
 
-      <Ionicons style={styles.heartIcon} name="heart-outline" />
+      <Pressable onPress={toggleIsLiked}>
+        <Ionicons
+          style={[styles.heartIcon, isLiked && styles.isLiked]}
+          name={isLiked ? 'heart-sharp' : 'heart-outline'}
+        />
+      </Pressable>
     </View>
   );
 };

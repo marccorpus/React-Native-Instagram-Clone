@@ -19,6 +19,9 @@ const styles = StyleSheet.create({
     color: colors.black,
     fontSize: fonts.size.xl,
   },
+  isLiked: {
+    color: colors.red,
+  },
 });
 
 export default styles;
