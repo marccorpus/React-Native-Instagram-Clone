@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
   },
   description: {
     flex: 1,
+    color: colors.black,
   },
   userName: {
     fontSize: fonts.size.normal,

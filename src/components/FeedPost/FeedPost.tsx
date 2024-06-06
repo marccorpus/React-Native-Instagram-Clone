@@ -35,7 +35,7 @@ const FeedPost = ({post}: FeedPostProps) => {
           />
         </View>
 
-        <Text style={styles.row}>
+        <Text style={[styles.likes, styles.row]}>
           Liked by <UserName textStyle={styles.userName} name="marcinecorpus" />{' '}
           and <Text style={styles.bold}>{post.nofLikes} others</Text>
         </Text>

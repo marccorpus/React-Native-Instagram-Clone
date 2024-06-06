@@ -45,7 +45,11 @@ const styles = StyleSheet.create({
   bookmarkIcon: {
     marginLeft: 'auto',
   },
+  likes: {
+    color: colors.black,
+  },
   description: {
+    color: colors.black,
     lineHeight: 20,
   },
   viewAllComments: {
