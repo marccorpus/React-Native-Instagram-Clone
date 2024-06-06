@@ -1,11 +1,7 @@
-import {View, Text} from 'react-native';
+import SafeArea from './src/components/SafeArea';
 
 const App = () => {
-  return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Instagram Clone</Text>
-    </View>
-  );
+  return <SafeArea></SafeArea>;
 };
 
 export default App;
