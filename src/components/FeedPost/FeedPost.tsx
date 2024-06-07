@@ -36,7 +36,7 @@ const FeedPost = ({post}: FeedPostProps) => {
       </DoublePressable>
 
       <View style={styles.footer}>
-        <View style={[styles.actionsContainer, styles.row]}>
+        <View style={styles.actionsContainer}>
           <Pressable onPress={toggleIsLiked}>
             <Ionicons
               style={[styles.actionIcon, isLiked && styles.isLiked]}
@@ -51,18 +51,23 @@ const FeedPost = ({post}: FeedPostProps) => {
           />
         </View>
 
-        <Text style={[styles.likes, styles.row]}>
-          Liked by <UserName textStyle={styles.userName} name="marcinecorpus" />{' '}
-          and <Text style={styles.bold}>{post.nofLikes} others</Text>
+        <Text style={styles.postNoOfLikes}>
+          Liked by
+          {` `}
+          <UserName textStyle={styles.userName} name="marcinecorpus" />
+          {` and `}
+          <Text style={styles.bold}>{`${post.nofLikes} others`}</Text>
         </Text>
 
         <Text
-          style={[styles.description, styles.row]}
+          style={styles.postDescription}
           numberOfLines={isDescriptionExpanded ? 0 : 3}>
-          <UserName textStyle={styles.userName} name={post.user.username} />{' '}
-          {post.description}
+          <UserName textStyle={styles.userName} name={post.user.username} />
+          <Text>{` ${post.description}`}</Text>
         </Text>
+
         <ButtonText
+          containerStyle={styles.togglePostDescription}
           text={`Show ${isDescriptionExpanded ? 'less' : 'more'}`}
           onPress={toggleDescriptionExpanded}
         />
@@ -79,7 +84,7 @@ const FeedPost = ({post}: FeedPostProps) => {
           <Comment key={comment.id} comment={comment} />
         ))}
 
-        <Text style={[styles.createdAt, styles.row]}>{post.createdAt}</Text>
+        <Text style={styles.createdAt}>{post.createdAt}</Text>
       </View>
     </>
   );

@@ -6,7 +6,7 @@ import fonts from '../../themes/fonts';
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    marginVertical: 6,
+    marginTop: 8,
   },
   description: {
     flex: 1,
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     fontSize: fonts.size.xl,
   },
   isLiked: {
-    color: colors.red,
+    color: colors.danger,
   },
 });
 

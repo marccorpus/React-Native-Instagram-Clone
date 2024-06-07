@@ -4,14 +4,8 @@ import colors from '../../themes/colors';
 import fonts from '../../themes/fonts';
 
 const styles = StyleSheet.create({
-  row: {
-    marginVertical: 6,
-  },
   userName: {
     fontSize: fonts.size.normal,
-  },
-  bold: {
-    fontWeight: fonts.weight.bold,
   },
 
   header: {
@@ -36,6 +30,7 @@ const styles = StyleSheet.create({
   },
   actionsContainer: {
     flexDirection: 'row',
+    alignItems: 'center',
     gap: 12,
   },
   actionIcon: {
@@ -46,20 +41,29 @@ const styles = StyleSheet.create({
     marginLeft: 'auto',
   },
   isLiked: {
-    color: colors.red,
+    color: colors.danger,
   },
-  likes: {
+  postNoOfLikes: {
     color: colors.black,
+    marginTop: 8,
   },
-  description: {
+  bold: {
+    fontWeight: fonts.weight.bold,
+  },
+  postDescription: {
     color: colors.black,
+    marginTop: 8,
     lineHeight: 20,
   },
+  togglePostDescription: {
+    marginTop: 4,
+  },
   viewAllComments: {
-    marginTop: 10,
+    marginTop: 8,
   },
   createdAt: {
     color: colors.gray,
+    marginTop: 8,
   },
 });
 
