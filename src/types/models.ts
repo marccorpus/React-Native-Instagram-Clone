@@ -14,6 +14,7 @@ export interface IPost {
   id: number;
   image?: string;
   images?: string[];
+  video?: string;
   description: string;
   nofComments: number;
   nofLikes: number;

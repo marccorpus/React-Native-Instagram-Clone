@@ -17,7 +17,7 @@ interface CarouselProps {
 }
 
 const Carousel = ({images, onDoublePress}: CarouselProps) => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState<null | number>(null);
 
   const {width} = useWindowDimensions();
 
@@ -30,7 +30,7 @@ const Carousel = ({images, onDoublePress}: CarouselProps) => {
   }: {
     viewableItems: ViewToken[];
   }) => {
-    setActiveIndex(viewableItems[0]?.index || 0);
+    setActiveIndex(viewableItems[0]?.index);
   };
 
   return (

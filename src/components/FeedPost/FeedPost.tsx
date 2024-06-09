@@ -5,6 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import UserAvatar from '../UserAvatar';
 import UserName from '../UserName';
 import Carousel from '../Carousel';
+import VideoPlayer from '../VideoPlayer';
 import Comment from '../Comment';
 import ButtonText from '../ButtonText';
 import DoublePressable from '../DoublePressable';
@@ -15,9 +16,10 @@ import {IPost} from '../../types/models';
 
 interface FeedPostProps {
   post: IPost;
+  viewablePostId: null | number;
 }
 
-const FeedPost = ({post}: FeedPostProps) => {
+const FeedPost = ({post, viewablePostId}: FeedPostProps) => {
   const [isLiked, setIsLiked] = useState(false);
   const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
 
@@ -33,6 +35,12 @@ const FeedPost = ({post}: FeedPostProps) => {
     );
   } else if (post.images) {
     content = <Carousel images={post.images} onDoublePress={toggleIsLiked} />;
+  } else if (post.video) {
+    content = (
+      <DoublePressable onDoublePress={toggleIsLiked}>
+        <VideoPlayer uri={post.video} paused={post.id !== viewablePostId} />
+      </DoublePressable>
+    );
   }
 
   return (
