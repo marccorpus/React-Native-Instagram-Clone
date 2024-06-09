@@ -13,6 +13,7 @@ export interface IComment {
 export interface IPost {
   id: number;
   image?: string;
+  images?: string[];
   description: string;
   nofComments: number;
   nofLikes: number;

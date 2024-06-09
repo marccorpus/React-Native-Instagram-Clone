@@ -4,6 +4,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import UserAvatar from '../UserAvatar';
 import UserName from '../UserName';
+import Carousel from '../Carousel';
 import Comment from '../Comment';
 import ButtonText from '../ButtonText';
 import DoublePressable from '../DoublePressable';
@@ -23,6 +24,17 @@ const FeedPost = ({post}: FeedPostProps) => {
   const toggleIsLiked = () => setIsLiked(v => !v);
   const toggleDescriptionExpanded = () => setIsDescriptionExpanded(v => !v);
 
+  let content = null;
+  if (post.image) {
+    content = (
+      <DoublePressable onDoublePress={toggleIsLiked}>
+        <Image style={styles.postImage} source={{uri: post.image}} />
+      </DoublePressable>
+    );
+  } else if (post.images) {
+    content = <Carousel images={post.images} onDoublePress={toggleIsLiked} />;
+  }
+
   return (
     <>
       <View style={styles.header}>
@@ -31,9 +43,7 @@ const FeedPost = ({post}: FeedPostProps) => {
         <Ionicons style={styles.moreIcon} name="ellipsis-horizontal" />
       </View>
 
-      <DoublePressable onDoublePress={toggleIsLiked}>
-        <Image style={styles.postImage} source={{uri: post.image}} />
-      </DoublePressable>
+      {content}
 
       <View style={styles.footer}>
         <View style={styles.actionsContainer}>
