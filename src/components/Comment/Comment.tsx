@@ -3,6 +3,7 @@ import {View, Text, Pressable} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import UserName from '../UserName';
+import UserAvatar from '../UserAvatar';
 
 import styles from './styles';
 
@@ -10,9 +11,10 @@ import {IComment} from '../../types/models';
 
 interface CommentProps {
   comment: IComment;
+  showDetails: boolean;
 }
 
-const Comment = ({comment}: CommentProps) => {
+const Comment = ({comment, showDetails}: CommentProps) => {
   const [isLiked, setIsLiked] = useState(false);
 
   const toggleIsLiked = () => {
@@ -21,10 +23,24 @@ const Comment = ({comment}: CommentProps) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.description}>
-        <UserName textStyle={styles.userName} name={comment.user.username} />{' '}
-        {comment.comment}
-      </Text>
+      {showDetails && (
+        <UserAvatar style={styles.userAvatar} uri={comment.user.image} />
+      )}
+
+      <View style={styles.descriptionContainer}>
+        <Text style={styles.description}>
+          <UserName textStyle={styles.userName} name={comment.user.username} />{' '}
+          {comment.comment}
+        </Text>
+
+        {showDetails && (
+          <View style={styles.subDescriptionContainer}>
+            <Text style={styles.subDescription}>2d</Text>
+            <Text style={styles.subDescription}>5 likes</Text>
+            <Text style={styles.subDescription}>Reply</Text>
+          </View>
+        )}
+      </View>
 
       <Pressable onPress={toggleIsLiked}>
         <Ionicons

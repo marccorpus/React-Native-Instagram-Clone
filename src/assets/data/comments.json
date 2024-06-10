@@ -1,0 +1,101 @@
+[
+  {
+    "id": 11,
+    "comment": "Reprehenderit quo but reprehenderit consequuntur.",
+    "user": {
+      "id": 1,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
+      "username": "marccorpus"
+    }
+  },
+  {
+    "id": 10,
+    "comment": "Dicta perspiciatis natus. Nihil perspiciatis. Incididunt. Dolor aliquam commodo eius but incididunt nor id aliquid. Sint quae eiusmod aliquid do nemo nor quasi.",
+    "user": {
+      "id": 2,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
+      "username": "arvicorpus"
+    }
+  },
+  {
+    "id": 9,
+    "comment": "nventore enim quaerat tempor nor quis aperiam. Magni illum id and omnis ab. Quae.",
+    "user": {
+      "id": 3,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg",
+      "username": "marcuscorpus"
+    }
+  },
+  {
+    "id": 8,
+    "comment": "Inventore illo. Vel id numquam. Nesciunt. Illum. Eius sunt but dolores or omnis ma",
+    "user": {
+      "id": 4,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
+      "username": "mariuscorpus"
+    }
+  },
+  {
+    "id": 7,
+    "comment": " anim, elit. Nulla sed, omnis explicabo yet aliqua but est but ex. Nisi. Voluptate mollit. Numquam velit illo. Lorem irure. Eiusmod commodi so occaecat dicta, or ",
+    "user": {
+      "id": 1,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
+      "username": "marccorpus"
+    }
+  },
+  {
+    "id": 6,
+    "comment": "Quo autem nostrud.",
+    "user": {
+      "id": 2,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
+      "username": "arvicorpus"
+    }
+  },
+  {
+    "id": 5,
+    "comment": "Ex vel. Ex sed for ea so doloremque eaque so magni, reprehenderit. Vitae. Pers ",
+    "user": {
+      "id": 3,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg",
+      "username": "marcuscorpus"
+    }
+  },
+  {
+    "id": 4,
+    "comment": "Ex vel. Ex sed for ea so doloremque eaque so magni, reprehenderit. Vitae. Pers ",
+    "user": {
+      "id": 4,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg",
+      "username": "mariuscorpus"
+    }
+  },
+  {
+    "id": 3,
+    "comment": "Ex vel. Ex sed for ea so doloremque eaque so magni, reprehenderit. Vitae. Pers ",
+    "user": {
+      "id": 1,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg",
+      "username": "marccorpus"
+    }
+  },
+  {
+    "id": 2,
+    "comment": "Ex vel. Ex sed for ea so doloremque eaque so magni, reprehenderit. Vitae. Pers ",
+    "user": {
+      "id": 2,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg",
+      "username": "arvicorpus"
+    }
+  },
+  {
+    "id": 1,
+    "comment": "Ex vel. Ex sed for ea so doloremque eaque so magni, reprehenderit. Vitae. Pers ",
+    "user": {
+      "id": 3,
+      "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg",
+      "username": "marcuscorpus"
+    }
+  }
+]
