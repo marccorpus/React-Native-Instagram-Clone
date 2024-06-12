@@ -1,17 +1,23 @@
-import {StyleProp, ViewStyle, Pressable, Text} from 'react-native';
+import {StyleProp, ViewStyle, TextStyle, Pressable, Text} from 'react-native';
 
 import styles from './styles';
 
 interface ButtonTextProps {
-  containerStyle?: StyleProp<ViewStyle>;
   text: string;
   onPress: () => void;
+  containerStyle?: StyleProp<ViewStyle>;
+  textStyle?: StyleProp<TextStyle>;
 }
 
-const ButtonText = ({containerStyle, text, onPress}: ButtonTextProps) => {
+const ButtonText = ({
+  text,
+  onPress,
+  containerStyle,
+  textStyle,
+}: ButtonTextProps) => {
   return (
     <Pressable style={containerStyle} onPress={onPress}>
-      <Text style={styles.text}>{text}</Text>
+      <Text style={[styles.text, textStyle]}>{text}</Text>
     </Pressable>
   );
 };
