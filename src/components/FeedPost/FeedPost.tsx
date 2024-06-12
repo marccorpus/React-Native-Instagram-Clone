@@ -90,7 +90,7 @@ const FeedPost = ({post, viewablePostId}: FeedPostProps) => {
           onPress={toggleDescriptionExpanded}
         />
 
-        {post.nofLikes > 0 && (
+        {post.nofLikes && (
           <ButtonText
             containerStyle={styles.viewAllComments}
             text={`View all ${post.nofLikes} comments`}
@@ -98,7 +98,7 @@ const FeedPost = ({post, viewablePostId}: FeedPostProps) => {
           />
         )}
 
-        {post.comments.map(comment => (
+        {post.comments?.map(comment => (
           <Comment key={comment.id} comment={comment} />
         ))}
 

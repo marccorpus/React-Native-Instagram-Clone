@@ -16,9 +16,9 @@ export interface IPost {
   images?: string[];
   video?: string;
   description: string;
-  nofComments: number;
-  nofLikes: number;
-  comments: IComment[];
+  nofComments?: number;
+  nofLikes?: number;
+  comments?: IComment[];
   user: IUser;
   createdAt: string;
 }

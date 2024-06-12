@@ -11,7 +11,7 @@ import {IComment} from '../../types/models';
 
 interface CommentProps {
   comment: IComment;
-  showDetails: boolean;
+  showDetails?: boolean;
 }
 
 const Comment = ({comment, showDetails}: CommentProps) => {
