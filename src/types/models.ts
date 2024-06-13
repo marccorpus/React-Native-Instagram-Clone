@@ -1,7 +1,12 @@
 export interface IUser {
   id: number;
+  name?: string;
   username: string;
   image: string;
+  bio?: string;
+  postsCount?: number;
+  followersCount?: number;
+  followingCount?: number;
 }
 
 export interface IComment {
