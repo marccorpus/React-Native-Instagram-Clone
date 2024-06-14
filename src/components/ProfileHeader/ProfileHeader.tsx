@@ -1,5 +1,8 @@
-import {View, Image, Text} from 'react-native';
+import {View, Text} from 'react-native';
 
+import UserAvatar from '../UserAvatar';
+import Stats from '../Stats';
+import UserName from '../UserName';
 import ButtonOutline from '../ButtonOutline';
 
 import styles from './styles';
@@ -14,31 +17,30 @@ const ProfileHeader = ({user}: ProfileHeaderProps) => {
   return (
     <View style={styles.container}>
       <View style={styles.row}>
-        <Image style={styles.userAvatar} source={{uri: user.image}} />
+        <UserAvatar style={styles.userAvatar} uri={user.image} />
 
-        <View style={styles.statsContainer}>
-          <Text style={styles.statsNumber}>{user.postsCount}</Text>
-          <Text style={styles.statsText}>Posts</Text>
-        </View>
+        <Stats value={user.postsCount ?? 0} label="Posts" />
 
-        <View style={styles.statsContainer}>
-          <Text style={styles.statsNumber}>{user.followersCount}</Text>
-          <Text style={styles.statsText}>Followers</Text>
-        </View>
+        <Stats value={user.followersCount ?? 0} label="Followers" />
 
-        <View style={styles.statsContainer}>
-          <Text style={styles.statsNumber}>{user.followingCount}</Text>
-          <Text style={styles.statsText}>Following</Text>
-        </View>
+        <Stats value={user.followingCount ?? 0} label="Following" />
       </View>
 
-      <Text style={styles.name}>{user.name}</Text>
+      <UserName style={styles.name} name={user.name ?? ''} />
 
       <Text style={styles.bio}>{user.bio}</Text>
 
-      <View style={styles.actionsContainer}>
-        <ButtonOutline text="Edit Profile" onPress={() => {}} />
-        <ButtonOutline text="Another Button" onPress={() => {}} />
+      <View style={styles.buttonsContainer}>
+        <ButtonOutline
+          style={styles.button}
+          text="Edit Profile"
+          onPress={() => {}}
+        />
+        <ButtonOutline
+          style={styles.button}
+          text="Another Button"
+          onPress={() => {}}
+        />
       </View>
     </View>
   );

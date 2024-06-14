@@ -4,13 +4,13 @@ import styles from './styles';
 
 interface UserNameProps {
   name: string;
-  textStyle?: StyleProp<TextStyle>;
+  style?: StyleProp<TextStyle>;
   onPress?: () => void;
 }
 
-const UserName = ({name, textStyle, onPress}: UserNameProps) => {
+const UserName = ({name, style, onPress}: UserNameProps) => {
   return (
-    <Text style={[styles.text, textStyle]} onPress={onPress}>
+    <Text style={[styles.text, style]} onPress={onPress}>
       {name}
     </Text>
   );

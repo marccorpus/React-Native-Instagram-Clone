@@ -5,14 +5,15 @@ import fonts from '../../themes/fonts';
 
 const styles = StyleSheet.create({
   container: {
-    borderColor: colors.lightGray,
-    borderWidth: 1,
-    borderRadius: 8,
-    padding: 8,
+    alignItems: 'center',
   },
-  text: {
-    textAlign: 'center',
+  value: {
+    color: colors.black,
+    fontSize: fonts.size.lg,
     fontWeight: fonts.weight.bold,
+  },
+  label: {
+    color: colors.gray,
   },
 });
 

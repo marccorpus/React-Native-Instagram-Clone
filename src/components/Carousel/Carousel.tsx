@@ -13,10 +13,10 @@ import styles from './styles';
 
 interface CarouselProps {
   images: string[];
-  onDoublePress: () => void;
+  onDoublePress?: () => void;
 }
 
-const Carousel = ({images, onDoublePress}: CarouselProps) => {
+const Carousel = ({images, onDoublePress = () => {}}: CarouselProps) => {
   const [activeIndex, setActiveIndex] = useState<null | number>(null);
 
   const {width} = useWindowDimensions();

@@ -72,7 +72,7 @@ const FeedPost = ({post, viewablePostId}: FeedPostProps) => {
         <Text style={styles.postNoOfLikes}>
           Liked by
           {` `}
-          <UserName textStyle={styles.userName} name="marcinecorpus" />
+          <UserName style={styles.userName} name="marcinecorpus" />
           {` and `}
           <Text style={styles.bold}>{`${post.nofLikes} others`}</Text>
         </Text>
@@ -80,7 +80,7 @@ const FeedPost = ({post, viewablePostId}: FeedPostProps) => {
         <Text
           style={styles.postDescription}
           numberOfLines={isDescriptionExpanded ? 0 : 3}>
-          <UserName textStyle={styles.userName} name={post.user.username} />
+          <UserName style={styles.userName} name={post.user.username} />
           <Text>{` ${post.description}`}</Text>
         </Text>
 

@@ -29,7 +29,7 @@ const Comment = ({comment, showDetails}: CommentProps) => {
 
       <View style={styles.descriptionContainer}>
         <Text style={styles.description}>
-          <UserName textStyle={styles.userName} name={comment.user.username} />{' '}
+          <UserName style={styles.userName} name={comment.user.username} />{' '}
           {comment.comment}
         </Text>
 

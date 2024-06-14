@@ -3,12 +3,12 @@ import {StyleProp, ImageStyle, Image, Pressable} from 'react-native';
 import styles from './styles';
 
 interface UserAvatarProps {
-  style?: StyleProp<ImageStyle>;
   uri: string;
   onPress?: () => void;
+  style?: StyleProp<ImageStyle>;
 }
 
-const UserAvatar = ({style, uri, onPress}: UserAvatarProps) => {
+const UserAvatar = ({uri, onPress, style}: UserAvatarProps) => {
   return (
     <Pressable onPress={onPress}>
       <Image style={[styles.image, style]} source={{uri}} />

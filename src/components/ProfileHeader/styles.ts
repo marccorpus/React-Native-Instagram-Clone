@@ -17,17 +17,6 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 50,
   },
-  statsContainer: {
-    alignItems: 'center',
-  },
-  statsNumber: {
-    color: colors.black,
-    fontSize: fonts.size.lg,
-    fontWeight: fonts.weight.bold,
-  },
-  statsText: {
-    color: colors.gray,
-  },
   name: {
     fontSize: fonts.size.lg,
     fontWeight: fonts.weight.bold,
@@ -37,10 +26,13 @@ const styles = StyleSheet.create({
     color: colors.gray,
     lineHeight: 24,
   },
-  actionsContainer: {
+  buttonsContainer: {
     flexDirection: 'row',
     gap: 12,
     marginVertical: 12,
+  },
+  button: {
+    flex: 1,
   },
 });
 
