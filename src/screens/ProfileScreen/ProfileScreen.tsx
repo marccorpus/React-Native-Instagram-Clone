@@ -1,6 +1,6 @@
-import {View, FlatList, Image} from 'react-native';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import {View} from 'react-native';
 
+import GridView from '../../components/GridView';
 import ProfileHeader from '../../components/ProfileHeader';
 
 import styles from './styles';
@@ -8,26 +8,19 @@ import styles from './styles';
 import user from '../../assets/data/user.json';
 
 const ProfileScreen = () => {
+  const gridViewItems = user.posts.map(post => {
+    return {
+      id: post.id,
+      image: post.images ? post.images[0] : post.image,
+      isCollection: post.images ? true : false,
+    };
+  });
+
   return (
     <View style={styles.container}>
-      <FlatList
-        data={user.posts}
-        renderItem={({item}) => (
-          <View style={styles.imageContainer}>
-            <Image
-              style={styles.image}
-              source={{uri: item.images ? item.images[0] : item.image}}
-            />
-            {item.images && (
-              <MaterialIcons style={styles.collections} name="collections" />
-            )}
-          </View>
-        )}
-        numColumns={3}
-        showsVerticalScrollIndicator={false}
-        columnWrapperStyle={styles.spacing}
-        contentContainerStyle={styles.spacing}
-        ListHeaderComponent={() => <ProfileHeader user={user} />}
+      <GridView
+        items={gridViewItems}
+        listHeaderComponent={() => <ProfileHeader user={user} />}
       />
     </View>
   );
